@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="mahogany wood grain (illustration)">
+<defs>
+<filter id="g" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="600" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.10 0.004" numOctaves="3" seed="27" result="a"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.55 0.02" numOctaves="2" seed="32" result="b"/>
+<feComposite in="a" in2="b" operator="arithmetic" k1="0" k2=".7" k3=".3" k4="0" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0.948 0 0 0 0.076  0.632 0 0 0 -0.041  0.296 0 0 0 -0.018  0 0 0 0 1" result="c"/>
+<feComposite in="c" in2="SourceAlpha" operator="in"/>
+</filter>
+<linearGradient id="shade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".10"/><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".38"/></linearGradient>
+</defs>
+<rect width="800" height="600" fill="#000" filter="url(#g)"/>
+<path d="M179 -20 C241 180 117 420 199 620" stroke="#000" stroke-opacity="0.16" stroke-width="2.9" fill="none"/>
+<path d="M194 -20 C311 180 77 420 214 620" stroke="#000" stroke-opacity="0.1" stroke-width="2.8" fill="none"/>
+<path d="M260 -20 C368 180 152 420 280 620" stroke="#000" stroke-opacity="0.18" stroke-width="3.5" fill="none"/>
+<path d="M375 -20 C443 180 307 420 395 620" stroke="#000" stroke-opacity="0.19" stroke-width="2" fill="none"/>
+<path d="M681 -20 C739 180 623 420 701 620" stroke="#000" stroke-opacity="0.09" stroke-width="2.3" fill="none"/>
+<path d="M570 -20 C636 180 504 420 590 620" stroke="#000" stroke-opacity="0.09" stroke-width="1.9" fill="none"/>
+<path d="M162 -20 C260 180 64 420 182 620" stroke="#000" stroke-opacity="0.15" stroke-width="3.6" fill="none"/>
+<rect width="800" height="600" fill="url(#shade)"/>
+</svg>

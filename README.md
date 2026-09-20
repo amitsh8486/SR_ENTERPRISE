@@ -1,4 +1,4 @@
-# S R Enterprise – Company Website
+﻿# S R Enterprise – Company Website
 
 ## 1. Project overview
 
@@ -129,12 +129,13 @@ After going live with a domain, you may add an `og:image` tag (full URL of a 120
 
 ---
 
-## Redesign notes (current design)
+## Current design notes
 
-The site was redesigned as a premium timber brand site. Where older sections above disagree, this section is correct.
+This section is current; older sections above describe earlier versions.
 
-- Sections: Hero, Introduction, Our Materials (`#materials`, editorial tiles), Business strip, Why S R Enterprise (`#why-us`), cinematic image band, Process, Contact (form + details), Footer.
-- Product tiles are `<a class="tile" data-product="...">` elements in `index.html`; `js/script.js` turns them into WhatsApp enquiry links. Company details are still edited in the `COMPANY` block at the top of `js/script.js`.
-- Images (all in `assets/images/`, replaceable by keeping the file name): `hero-timber.jpg`, `wooden-boards.jpg`, `wooden-gulli.jpg`, `wooden-blocks.jpg`, `wood-materials.jpg`, `timber-band.jpg`. Photos are CC0 / public-domain files from Wikimedia Commons (Unsplash CC0 uploads and others). Replace them with photos of your own stock when available.
-- Fonts (Cormorant Garamond, Inter) load from Google Fonts with system-font fallbacks.
-- Theme colours are CSS variables at the top of `css/style.css`.
+- Business: timber and timber products (round logs and sized timber in Sal, Sagun Teak, Sheesham, Siris, Mahogany and Meguni).
+- Sections: Hero, Introduction, Our Timber (`#timber`), What We Supply (`#products`), Business strip, Why Us (`#why-us`), image band, Process, Contact (quote form), Footer.
+- Species and product tiles are in `index.html`; each Inquire link carries a `data-product` value that `js/script.js` turns into a WhatsApp message. Company details are edited in the `COMPANY` block at the top of `js/script.js`.
+- Images in `assets/images/`: `species-*.svg` (wood grain illustrations), `product-*.svg` (door frame, Diwan bed, gate, furniture illustrations), `round-logs.jpg`, `hero-timber.jpg`, `timber-band.jpg` (CC0 photos). To use real photos, see `docs/image-prompts.md`.
+- Fonts are self-hosted in `assets/fonts/`; the site makes no third-party requests except when a visitor clicks the WhatsApp or map links.
+- The enquiry form checks a 10-digit phone number (the +91 prefix is added automatically) and opens WhatsApp with the enquiry.

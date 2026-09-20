@@ -10,7 +10,7 @@ const COMPANY = {
   address: 'Jorabagan, Howrah, Kolkata',
   hours: '9:00 AM - 9:00 PM',
   // Default message used by every general WhatsApp button
-  whatsappMessage: 'Hello S R Enterprise, I would like to enquire about your wooden materials. Please share more details.'
+  whatsappMessage: 'Hello S R Enterprise, I would like to enquire about your timber and timber products. Please share more details.'
 };
 // ==========================================
 // END OF COMPANY INFORMATION
@@ -88,7 +88,7 @@ const COMPANY = {
     document.addEventListener('click', (event) => {
       if (nav.classList.contains('is-open') && !header.contains(event.target)) setOpen(false);
     });
-    window.matchMedia('(min-width: 992px)').addEventListener('change', (event) => {
+    window.matchMedia('(min-width: 1100px)').addEventListener('change', (event) => {
       if (event.matches) setOpen(false);
     });
 
@@ -149,6 +149,7 @@ const COMPANY = {
       phone: $('#f-phone'),
       email: $('#f-email'),
       product: $('#f-product'),
+      species: $('#f-species'),
       message: $('#f-message')
     };
 
@@ -166,8 +167,8 @@ const COMPANY = {
       setError(fields.name, name ? '' : 'Please enter your name.');
       if (!name) errors.push(fields.name);
 
-      const phoneOk = /^\+?[\d\s\-()]{7,20}$/.test(phone) && digitsOnly(phone).length >= 7;
-      setError(fields.phone, phoneOk ? '' : 'Please enter a valid phone number.');
+      const phoneOk = /^[0-9]{10}$/.test(phone);
+      setError(fields.phone, phoneOk ? '' : 'Please enter a 10-digit mobile number (without +91).');
       if (!phoneOk) errors.push(fields.phone);
 
       const emailOk = !email || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -179,6 +180,13 @@ const COMPANY = {
 
       return errors;
     }
+
+    // Phone accepts digits only (the +91 prefix is added automatically)
+    fields.phone.addEventListener('input', () => {
+      let digits = digitsOnly(fields.phone.value);
+      if (digits.length > 10 && digits.startsWith('91')) digits = digits.slice(2); // pasted/autofilled +91 number
+      fields.phone.value = digits.slice(0, 10);
+    });
 
     Object.values(fields).forEach((field) => {
       field.addEventListener('input', () => {
@@ -202,12 +210,13 @@ const COMPANY = {
       const message = [
         'Hello ' + COMPANY.name + ',',
         '',
-        'I would like to enquire about your wooden materials.',
+        'I would like to request a quote for timber.',
         '',
         'Name: ' + fields.name.value.trim(),
-        'Phone: ' + fields.phone.value.trim(),
+        'Phone: +91 ' + fields.phone.value.trim(),
         'Email: ' + (fields.email.value.trim() || 'Not provided'),
         'Requirement: ' + fields.product.value,
+        'Wood species: ' + (fields.species.value || 'Not specified'),
         'Message: ' + (fields.message.value.trim() || 'Not provided')
       ].join('\n');
       const url = whatsappUrl(message);
@@ -233,4 +242,7 @@ const COMPANY = {
   initReveal();
   initEnquiryForm();
 })();
+
+
+
 

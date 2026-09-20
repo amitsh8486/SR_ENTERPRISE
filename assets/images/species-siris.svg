@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="siris wood grain (illustration)">
+<defs>
+<filter id="g" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="600" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.06 0.004" numOctaves="3" seed="21" result="a"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.55 0.02" numOctaves="2" seed="26" result="b"/>
+<feComposite in="a" in2="b" operator="arithmetic" k1="0" k2=".7" k3=".3" k4="0" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0.51 0 0 0 0.537  0.663 0 0 0 0.342  0.683 0 0 0 0.172  0 0 0 0 1" result="c"/>
+<feComposite in="c" in2="SourceAlpha" operator="in"/>
+</filter>
+<linearGradient id="shade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".10"/><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".38"/></linearGradient>
+</defs>
+<rect width="800" height="600" fill="#000" filter="url(#g)"/>
+<path d="M334 -20 C395 180 273 420 354 620" stroke="#000" stroke-opacity="0.18" stroke-width="3.2" fill="none"/>
+<path d="M466 -20 C566 180 366 420 486 620" stroke="#000" stroke-opacity="0.08" stroke-width="2" fill="none"/>
+<path d="M533 -20 C628 180 438 420 553 620" stroke="#000" stroke-opacity="0.11" stroke-width="2.8" fill="none"/>
+<path d="M346 -20 C492 180 200 420 366 620" stroke="#000" stroke-opacity="0.1" stroke-width="2.5" fill="none"/>
+<path d="M78 -20 C155 180 1 420 98 620" stroke="#000" stroke-opacity="0.17" stroke-width="2.3" fill="none"/>
+<path d="M631 -20 C755 180 507 420 651 620" stroke="#000" stroke-opacity="0.12" stroke-width="2.5" fill="none"/>
+<path d="M308 -20 C412 180 204 420 328 620" stroke="#000" stroke-opacity="0.17" stroke-width="1.5" fill="none"/>
+<rect width="800" height="600" fill="url(#shade)"/>
+</svg>

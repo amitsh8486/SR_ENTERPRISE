@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="sal wood grain (illustration)">
+<defs>
+<filter id="g" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="600" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.07 0.004" numOctaves="3" seed="3" result="a"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.55 0.02" numOctaves="2" seed="8" result="b"/>
+<feComposite in="a" in2="b" operator="arithmetic" k1="0" k2=".7" k3=".3" k4="0" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0.775 0 0 0 -0.048  0.571 0 0 0 -0.061  0.347 0 0 0 -0.037  0 0 0 0 1" result="c"/>
+<feComposite in="c" in2="SourceAlpha" operator="in"/>
+</filter>
+<linearGradient id="shade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".10"/><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".38"/></linearGradient>
+</defs>
+<rect width="800" height="600" fill="#000" filter="url(#g)"/>
+<path d="M112 -20 C170 180 54 420 132 620" stroke="#000" stroke-opacity="0.12" stroke-width="1.5" fill="none"/>
+<path d="M606 -20 C655 180 557 420 626 620" stroke="#000" stroke-opacity="0.14" stroke-width="2.1" fill="none"/>
+<path d="M682 -20 C739 180 625 420 702 620" stroke="#000" stroke-opacity="0.15" stroke-width="3.3" fill="none"/>
+<path d="M254 -20 C308 180 200 420 274 620" stroke="#000" stroke-opacity="0.17" stroke-width="1.7" fill="none"/>
+<path d="M313 -20 C447 180 179 420 333 620" stroke="#000" stroke-opacity="0.15" stroke-width="2.2" fill="none"/>
+<path d="M136 -20 C210 180 62 420 156 620" stroke="#000" stroke-opacity="0.19" stroke-width="1.5" fill="none"/>
+<path d="M66 -20 C187 180 -55 420 86 620" stroke="#000" stroke-opacity="0.12" stroke-width="2.8" fill="none"/>
+<rect width="800" height="600" fill="url(#shade)"/>
+</svg>

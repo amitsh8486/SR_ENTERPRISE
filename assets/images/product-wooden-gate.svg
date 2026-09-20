@@ -1,0 +1,40 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Heavy wooden entrance gate (illustration)">
+<defs>
+<filter id="v" filterUnits="userSpaceOnUse" x="0" y="0" width="1200" height="1000" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.12 0.004" numOctaves="3" seed="7" result="a"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.55 0.02" numOctaves="2" seed="12" result="b"/>
+<feComposite in="a" in2="b" operator="arithmetic" k1="0" k2=".7" k3=".3" k4="0" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0.755 0 0 0 0.064  0.612 0 0 0 -0.019  0.387 0 0 0 -0.038  0 0 0 0 1" result="c"/>
+<feComposite in="c" in2="SourceAlpha" operator="in"/>
+</filter>
+<filter id="h" filterUnits="userSpaceOnUse" x="0" y="0" width="1200" height="1000" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.004 0.1" numOctaves="3" seed="15" result="a"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.02 0.55" numOctaves="2" seed="20" result="b"/>
+<feComposite in="a" in2="b" operator="arithmetic" k1="0" k2=".7" k3=".3" k4="0" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0.673 0 0 0 0.026  0.5 0 0 0 -0.02  0.285 0 0 0 -0.023  0 0 0 0 1" result="c"/>
+<feComposite in="c" in2="SourceAlpha" operator="in"/>
+</filter>
+<radialGradient id="bg" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#3a2618"/><stop offset="1" stop-color="#150d08"/></radialGradient>
+</defs>
+<rect width="1200" height="1000" fill="url(#bg)"/>
+<ellipse cx="600" cy="905" rx="450" ry="24" fill="#000" opacity=".45"/>
+<rect x="220" y="170" width="90" height="720" fill="#000" filter="url(#v)"/>
+<rect x="890" y="170" width="90" height="720" fill="#000" filter="url(#v)"/>
+<rect x="205" y="140" width="120" height="40" fill="#000" filter="url(#h)"/>
+<rect x="875" y="140" width="120" height="40" fill="#000" filter="url(#h)"/>
+<rect x="310" y="240" width="290" height="640" fill="#000" filter="url(#v)"/>
+<rect x="600" y="240" width="290" height="640" fill="#000" filter="url(#v)"/>
+<rect x="310" y="240" width="580" height="70" fill="#000" filter="url(#h)"/>
+<rect x="310" y="530" width="580" height="70" fill="#000" filter="url(#h)"/>
+<rect x="310" y="810" width="580" height="70" fill="#000" filter="url(#h)"/>
+<rect x="598" y="240" width="4" height="640" fill="#000" opacity=".55"/>
+<g fill="none" stroke="#c9a464" stroke-opacity=".75" stroke-width="2" stroke-linejoin="round">
+<rect x="220" y="170" width="90" height="720"/><rect x="890" y="170" width="90" height="720"/>
+<rect x="205" y="140" width="120" height="40"/><rect x="875" y="140" width="120" height="40"/>
+<rect x="310" y="240" width="580" height="640"/>
+<path d="M310 310H890M310 530H890M310 600H890M310 810H890" stroke-opacity=".6"/>
+<path d="M382 310V530M454 310V530M526 310V530M672 310V530M744 310V530M816 310V530M382 600V810M454 600V810M526 600V810M672 600V810M744 600V810M816 600V810" stroke="#000" stroke-opacity=".35" stroke-width="2"/>
+<circle cx="566" cy="565" r="14"/><circle cx="634" cy="565" r="14"/>
+</g>
+<g fill="#c9a464" fill-opacity=".85"><circle cx="340" cy="290" r="6"/><circle cx="340" cy="565" r="6"/><circle cx="340" cy="830" r="6"/><circle cx="390" cy="290" r="6"/><circle cx="390" cy="565" r="6"/><circle cx="390" cy="830" r="6"/><circle cx="440" cy="290" r="6"/><circle cx="440" cy="565" r="6"/><circle cx="440" cy="830" r="6"/><circle cx="490" cy="290" r="6"/><circle cx="490" cy="565" r="6"/><circle cx="490" cy="830" r="6"/><circle cx="540" cy="290" r="6"/><circle cx="540" cy="565" r="6"/><circle cx="540" cy="830" r="6"/><circle cx="660" cy="290" r="6"/><circle cx="660" cy="565" r="6"/><circle cx="660" cy="830" r="6"/><circle cx="710" cy="290" r="6"/><circle cx="710" cy="565" r="6"/><circle cx="710" cy="830" r="6"/><circle cx="760" cy="290" r="6"/><circle cx="760" cy="565" r="6"/><circle cx="760" cy="830" r="6"/><circle cx="810" cy="290" r="6"/><circle cx="810" cy="565" r="6"/><circle cx="810" cy="830" r="6"/><circle cx="860" cy="290" r="6"/><circle cx="860" cy="565" r="6"/><circle cx="860" cy="830" r="6"/></g>
+</svg>

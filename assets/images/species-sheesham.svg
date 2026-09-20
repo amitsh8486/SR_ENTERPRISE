@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="sheesham wood grain (illustration)">
+<defs>
+<filter id="g" filterUnits="userSpaceOnUse" x="0" y="0" width="800" height="600" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.09 0.004" numOctaves="3" seed="14" result="a"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.55 0.02" numOctaves="2" seed="19" result="b"/>
+<feComposite in="a" in2="b" operator="arithmetic" k1="0" k2=".7" k3=".3" k4="0" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0.907 0 0 0 -0.072  0.51 0 0 0 -0.055  0.265 0 0 0 -0.017  0 0 0 0 1" result="c"/>
+<feComposite in="c" in2="SourceAlpha" operator="in"/>
+</filter>
+<linearGradient id="shade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".10"/><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".38"/></linearGradient>
+</defs>
+<rect width="800" height="600" fill="#000" filter="url(#g)"/>
+<path d="M398 -20 C439 180 357 420 418 620" stroke="#000" stroke-opacity="0.12" stroke-width="3.9" fill="none"/>
+<path d="M103 -20 C183 180 23 420 123 620" stroke="#000" stroke-opacity="0.19" stroke-width="3.6" fill="none"/>
+<path d="M631 -20 C693 180 569 420 651 620" stroke="#000" stroke-opacity="0.15" stroke-width="2.8" fill="none"/>
+<path d="M311 -20 C385 180 237 420 331 620" stroke="#000" stroke-opacity="0.19" stroke-width="3.2" fill="none"/>
+<path d="M619 -20 C681 180 557 420 639 620" stroke="#000" stroke-opacity="0.12" stroke-width="1.9" fill="none"/>
+<path d="M253 -20 C315 180 191 420 273 620" stroke="#000" stroke-opacity="0.17" stroke-width="3.1" fill="none"/>
+<path d="M592 -20 C647 180 537 420 612 620" stroke="#000" stroke-opacity="0.14" stroke-width="2" fill="none"/>
+<rect width="800" height="600" fill="url(#shade)"/>
+</svg>
